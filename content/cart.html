@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todojuegos</title>
+    <link rel="stylesheet" href="/css/cart.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="contenedor-logo">
+                <a href="../index.html">
+                    <img src="/images/index/todojuegos.jpg" alt="logo todojuegos" class="logo">
+                </a>
+                
+            </div>
+            <div class="buscador">
+                <input type="text" class="search-bar" placeholder="Buscar juegos, claves, tarjetas de regalo...">
+                <select name="categories" id="categories" class="categories">
+                    <option selected value="videojuegos">Todas las categorías</option>
+                    <option value="videojuegos">Videojuegos</option>
+                    <option value="software">Software</option>
+                    <option value="tarjetasRegalo">Tarjetas regalo</option>
+                </select>
+                <div class="lupa">
+                    <a href="">
+                        <img src="/images/index/icon-lupa.png" class="lupa-img" alt="icono lupa">
+                    </a>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="cart.html"><img src="/images/index/icon-carrito-de-compras.png" alt="" class="icono-carrito"></a>
+                <a href="login.html">Acceder</a>
+                <a href="signup.html">Registro</a>
+            </div>
+        </nav>
+        <div class="bloque-categorias">
+            <a href="categories.html" class="categoria-bloq" id="seleccionado">Los más vendidos</a>
+            <a href="categories.html" class="categoria-bloq">Mejor valorados</a>
+            <a href="categories.html" class="categoria-bloq">Software</a>
+            <a href="categories.html" class="categoria-bloq">Claves aleatorias</a>
+            <a href="categories.html" class="categoria-bloq">Membresias</a>
+        </div>
+    </header>
+
+    <section class="section">
+        <h1>Tu carrito:</h1>
+        <div class="product-content">
+            <div class="product-image">
+                <img src="/images/productPage/portada-fc25.webp" alt="Portada de FC 25">
+            </div>
+
+            
+            <div class="product-info">
+                <div class="product-details">
+                    <div class="nombreJuego">
+                        <h3>FC 25 (PC) - EA Sports Key - GLOBAL</h3>
+                    </div>
+                    <div class="cantidadJuegos">
+                        <select name="cantidadJuego" id="cantidadJuego" class="cantidadJuego">
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                        <a href=""><img src="/images/cart/icon-papelera.png" alt="icono papelera" class="icono-papelera"></a>
+                    </div>
+                    <div class="precioJuego">
+                        <h2>39,99€</h2>
+                    </div>
+
+
+                </div>
+                <!--! esta parte quiero separarla un poco -->
+                <div class="product-purchase">
+                    <label for="mail">Introduce tu dirección de correo para recibir el juego:</label>
+                    <input type="text" name="mail" id="mail" value="">
+                    <h2 style="margin-top: 10px;">Precio total:</h2>
+                    <div class="price">40.59€</div>
+                    <a href="payment.html" class="buy-now">Continuar con el pago</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="recomendaciones">
+            <h4>Otros clientes también compraron:</h4>
+            <div class="recomendacion">
+                <img src="/images/cart/monedas.jpeg" alt="Portada de FC 25">
+                <div class="nombreRecomendacion">
+                    <h5>EA SPORTS FC 25 Coins (PS, Xbox, PC) 200k</h5>
+                    <h6><b>Vendido por:</b> JuegosManolete</h6>
+                </div>
+                <div class="anyadir">
+                    <h5><b>33.99€</b></h5>
+                    <button class="boton-anyadir">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="recomendacion">
+                <img src="/images/cart/points.webp" alt="Portada de FC 25">
+
+                <div class="nombreRecomendacion">
+                    <h5>EA Sports FC 25 Ultimate Team 5900 FC Points</h5>
+                    <h6><b>Vendido por:</b> JuegosPepito</h6>
+                </div>
+                <div class="anyadir">
+                    <h5><b>13.99€</b></h5>
+                    <button class="boton-anyadir">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="recomendacion">
+                <img src="/images/productPage/portada-fc25.webp" alt="Portada de FC 25">
+                <div class="nombreRecomendacion">
+                    <h5>EA SPORTS FC 25 Coins (PC) 200k</h5>
+                    <h6><b>Vendido por:</b> JuegosJuanito</h6>
+                </div>
+
+                <div class="anyadir">
+                    <h5><b>23.99€</b></h5>
+                    <button class="boton-anyadir">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Todojuegos. Todos los derechos reservados.</p>
+        <div class="footer-links">
+            <a href="#">Acerca de nosotros</a>
+            <a href="#">Términos de servicio</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Contacto</a>
+        </div>
+    </footer>
+</body>
+</html>
