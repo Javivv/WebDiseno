@@ -153,11 +153,9 @@ a{
 }
 
 .section {
-    padding: 10em;
+    padding: 5em;
     background-color: var(--blancoLavanda);
     background-size: cover;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
     width: 100%;
 }
 .section h2 {
@@ -281,4 +279,8 @@ p {
     width: 40px;
     height: 40px;
     margin-right: 10px;
+}
+
+video{
+    margin-top: 2em;
 }
