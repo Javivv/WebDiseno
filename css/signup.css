@@ -148,3 +148,33 @@ nav a{
     margin-left: 10px;
     margin-right: 10px;
 }
+
+footer {
+    background-color: var(--violetaOscuro);
+    color: var(--blancoLavanda);
+    font-weight: 600;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .footer-links a {
+    color: var(--blancoLavanda);
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .nav-link {
+    color: var(--blancoLavanda);
+  }
+  
+  .nav-link:hover {
+    color: white;
+  }
