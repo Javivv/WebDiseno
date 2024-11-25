@@ -1,0 +1,59 @@
+body {
+    background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+    max-width: 400px;
+    width: 100%;
+}
+
+.check-icon {
+    font-size: 48px;
+    animation: scaleIn 0.5s ease-out;
+}
+
+.card-title {
+    animation: slideIn 1s ease-out;
+}
+
+.game-icon {
+    font-size: 36px;
+}
+
+.game-message {
+    font-weight: bold;
+    color: #6a11cb;
+}
+
+.btn {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes scaleIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+@media (max-width: 480px) {
+    .card {
+        margin: 10px;
+    }
+}
