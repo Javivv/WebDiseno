@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todojuegos</title>
-    <link rel="stylesheet" href="/css/cart.css">
+    <title>Pagina de producto</title>
+    <link rel="stylesheet" href="/css/offer.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="icon" href="/images/index/todojuegos.ico" type="image/x-icon">
 
@@ -27,7 +27,7 @@
                     <option value="tarjetasRegalo">Tarjetas regalo</option>
                 </select>
                 <div class="lupa">
-                    <a href="categories.html">
+                    <a href="">
                         <img src="/images/index/icon-lupa.png" class="lupa-img" alt="icono lupa">
                     </a>
                 </div>
@@ -48,90 +48,51 @@
     </header>
 
     <section class="section">
-        <h1>Tu carrito:</h1>
-        <div class="product-content">
-            <div class="product-image">
-                <img src="/images/productPage/portada-fc25.webp" alt="Portada de FC 25">
-            </div>
-
-            
-            <div class="product-info">
-                <div class="product-details">
-                    <div class="nombreJuego">
-                        <h3>FC 25 (PC) - EA Sports Key - GLOBAL</h3>
-                    </div>
-                    <div class="cantidadJuegos">
-                        <select name="cantidadJuego" id="cantidadJuego" class="cantidadJuego">
-                            <option selected value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                        </select>
-                        <a href=""><img src="/images/cart/icon-papelera.png" alt="icono papelera" class="icono-papelera"></a>
-                    </div>
-                    <div class="precioJuego">
-                        <h2>39,99€</h2>
-                    </div>
-
-
-                </div>
-                <!--! esta parte quiero separarla un poco -->
-                <div class="product-purchase">
-                    <label for="mail">Introduce tu dirección de correo para recibir el juego:</label>
-                    <input type="text" name="mail" id="mail" value="">
-                    <h2 style="margin-top: 10px;">Precio total:</h2>
-                    <div class="price">40.59€</div>
-                    <a href="checkout.html" class="buy-now">Continuar con el pago</a>
-
-                </div>
-            </div>
+        <div class="imagenOferta">
+            <img src="/images/offer/oferta.png" alt="">
+        </div>
+        <div class="contenido">
+            <h1>BLACK FRIDAY 2024</h1>
+            <h2>29 de noviembre - 2 de diciembre</h2>
+            <p>¡Prepárate para Black Friday 2024! El Black Friday comienza el 29 de noviembre y te ofrece descuentos en juegos de PC, PlayStation, Nintendo Switch y Xbox. Si buscas opciones económicas en reservas de juegos que no han salido, suscripciones, tarjetas regalo o points, tenemos lo que necesitas. ¡No olvides volver todos los días para conocer las últimas ofertas!</p>
+        </div>
+        <div class="countdown text-center mb-5">
+            <span id="countdown" class="display-4"></span> <br>
+            <span>DIA &nbsp;&nbsp;&nbsp; HORAS  &nbsp;&nbsp;&nbsp; MINUTOS   &nbsp;&nbsp;&nbsp;  SEGUNDOS</span>
         </div>
 
-        <div class="recomendaciones">
-            <h4>Otros clientes también compraron:</h4>
-            <div class="recomendacion">
-                <img src="/images/cart/monedas.jpeg" alt="Portada de FC 25">
-                <div class="nombreRecomendacion">
-                    <h5>EA SPORTS FC 25 Coins (PS, Xbox, PC) 200k</h5>
-                    <h6><b>Vendido por:</b> JuegosManolete</h6>
-                </div>
-                <div class="anyadir">
-                    <h5><b>33.99€</b></h5>
-                    <button class="boton-anyadir">Añadir al carrito</button>
-                </div>
-            </div>
-            <div class="recomendacion">
-                <img src="/images/cart/points.webp" alt="Portada de FC 25">
-
-                <div class="nombreRecomendacion">
-                    <h5>EA Sports FC 25 Ultimate Team 5900 FC Points</h5>
-                    <h6><b>Vendido por:</b> JuegosPepito</h6>
-                </div>
-                <div class="anyadir">
-                    <h5><b>13.99€</b></h5>
-                    <button class="boton-anyadir">Añadir al carrito</button>
-                </div>
-            </div>
-
-            <div class="recomendacion">
-                <img src="/images/productPage/portada-fc25.webp" alt="Portada de FC 25">
-                <div class="nombreRecomendacion">
-                    <h5>EA SPORTS FC 25 Coins (PC) 200k</h5>
-                    <h6><b>Vendido por:</b> JuegosJuanito</h6>
-                </div>
-
-                <div class="anyadir">
-                    <h5><b>23.99€</b></h5>
-                    <button class="boton-anyadir">Añadir al carrito</button>
-                </div>
-            </div>
+        <div class="text-center">
+            <button class="btn btn-lg" style="background-color: #A076F9; color: white;">Recibir notificación cuando empiece</button>
         </div>
+    
+    <script>
+        // Establecer la fecha objetivo (2 de diciembre de 2024)
+        const countDownDate = new Date("Dec 2, 2024 00:00:00").getTime();
+
+        // Actualizar la cuenta regresiva cada segundo
+        const x = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+
+            // Cálculos de tiempo para días, horas, minutos y segundos
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Mostrar el resultado en el elemento con id="countdown"
+            document.getElementById("countdown").innerHTML = days + "&nbsp;&nbsp;&nbsp;" + hours + "&nbsp;&nbsp;&nbsp;"
+            + minutes + "&nbsp;&nbsp;&nbsp;" + seconds + " ";
+
+            // Si la cuenta regresiva termina, escribir algún texto
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "¡BLACK FRIDAY HA COMENZADO!";
+            }
+        }, 1000);
+
+
+    </script>
 
     </section>
     

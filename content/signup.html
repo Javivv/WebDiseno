@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="/css/signup.css">
+    <link rel="icon" href="/images/index/todojuegos.ico" type="image/x-icon">
+</head>
+<body class="text-center" style="background-color: rgb(240, 233, 233);">
+    <header>
+        <nav>
+            <a href="/index.html"> < Volver a <img src="/images/index/todojuegos.jpg" alt="todojuegos logo" class="logo"></a>
+        </nav>
+    </header>
+    <main class="form-signup w-100 m-auto" style="padding: 3em 0;">
+        <form>
+            <img class="logo" src="../images/index/todojuegos.jpg" alt="" width="72" height="57">
+
+            <h1 class="h3 mb-3 fw-normal" style="color: #6528F7;">Registro de Usuario</h1>
+
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingName" placeholder="Nombre" required>
+                <label for="floatingName">Nombre</label>
+            </div>
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingLastName" placeholder="Apellido" required>
+                <label for="floatingLastName">Apellido</label>
+            </div>
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingEmail" placeholder="nombre@ejemplo.com" required>
+                <label for="floatingEmail">Correo electrónico</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña" required>
+                <label for="floatingPassword">Contraseña</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingConfirmPassword" placeholder="Confirmar Contraseña" required>
+                <label for="floatingConfirmPassword">Confirmar Contraseña</label>
+            </div>
+            <div class="form-floating">
+                <input type="date" class="form-control" id="floatingBirthdate" required>
+                <label for="floatingBirthdate">Fecha de Nacimiento</label>
+            </div>
+
+            <div class="checkbox mb-3 text-start">
+                <label>
+                    <input type="checkbox" value="terms-and-conditions" required> Acepto los términos y condiciones
+                </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit" style="background-color: #6528F7;" id="registerform">Registrarse</button>
+            <p class="mt-5 mb-3 text-muted">&copy; 2024</p>
+        </form>
+
+        <div class="modal fade" id="sessionModal" tabindex="-1" aria-labelledby="sessionModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sessionModalLabel">Inicio de Sesión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    ¡Bienvenido a todojuegos! Se ha creado su nueva cuenta.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+        const loginForm = document.getElementById('registerform');
+
+        loginForm.addEventListener('click', function (e) {
+        e.preventDefault(); // Evita el envío del formulario por defecto
+
+        // Mostrar el modal
+        const sessionModal = new bootstrap.Modal(document.getElementById('sessionModal'));
+        sessionModal.show();
+
+        // Redirigir después de 3 segundos
+        setTimeout(() => {
+          window.location.href = "/index.html"; // Nos redirige a la página principal 
+        }, 3000); // Espera 3 segundos para redirigirnos
+    });
+    </script>
+    
+</body>
+</html>
